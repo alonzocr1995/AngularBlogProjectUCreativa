@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>All Post</h3>
+  <ul *ngFor="let post of allPost; index as i" routerLink="/post/{{ post.id }}">
+    <label>{{ post.title }}:</label>
+    <li>{{ post.body }}</li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

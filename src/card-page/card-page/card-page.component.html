@@ -1,0 +1,50 @@
+<!-- <div class="container">
+  <div class="user-container">
+    <p>{{ user.name }}</p>
+    <p>{{ user.username }}</p>
+    <p>{{ user.email }}</p>
+    <p>{{ user.address.city }}</p>
+    <p>{{ user.company.name }}</p>
+  </div>
+</div> -->
+<div class="container">
+  <div class="post-container">
+    <div class="post-cart">
+      <h3>Angular Nerds</h3>
+      <label
+        >Name:
+        <p>{{ user.name }}</p></label
+      >
+
+      <label
+        >Username:
+        <p>{{ user.username }}</p></label
+      >
+
+      <label
+        >Email:
+        <p>{{ user.email }}</p></label
+      >
+      <label
+        >Address:
+        <p>{{ user.address.city }}</p></label
+      >
+      <label
+        >Company:
+        <p>{{ user.company.name }}</p></label
+      >
+      <label>Post: </label>
+      <div *ngFor="let post of userPosts">
+        <ul class="link-container" routerLink="/post/{{ post.id }}">
+          <li>http://localhost:4200/post/{{ post.id }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- <div *ngFor="let post of userPosts">
+    <div routerLink="/post/{{ post.id }}">
+      <a>http://localhost:4200/post/{{ post.id }}</a>
+    </div>
+  </div> -->
+</div>
+<router-outlet></router-outlet>

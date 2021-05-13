@@ -1,0 +1,36 @@
+<!-- <div class="img-container"></div>
+<div class="img-text">
+  <p>Latest Post</p>
+  <div class="arrow-icon"></div>
+</div> -->
+<app-latest-post></app-latest-post>
+
+<div routerLink="user" routerLinkActive="active" class="container">
+  <div
+    *ngFor="let user of userNames; index as i"
+    routerLink="/user/{{ user.id }}"
+    class="post-container"
+  >
+    <div class="post-cart">
+      <h3>Angular Nerds</h3>
+      <p>{{ post[i].title }}</p>
+      <p>{{ user.username }}</p>
+    </div>
+  </div>
+
+  <!-- <div class="post-container">
+    <div class="post-cart">
+      <h3>Angular Nerds</h3>
+      <p>Title</p>
+      <p>User</p>
+    </div>
+  </div>
+  <div class="post-container">
+    <div class="post-cart">
+      <h3>Angular Nerds</h3>
+      <p>Title</p>
+      <p>User</p>
+    </div>
+  </div> -->
+</div>
+<router-outlet></router-outlet>

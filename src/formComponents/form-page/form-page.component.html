@@ -1,0 +1,56 @@
+<div class="container">
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-25">
+        <label for="country">User</label>
+      </div>
+      <div class="col-75">
+        <select
+          formControlName="username"
+          (change)="onChange($event.target.value)"
+        >
+          <option
+            *ngFor="let user of users; index as userIndex"
+            [value]="user.id"
+          >
+            {{ user.username }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Title">Title</label>
+      </div>
+      <div class="col-75">
+        <input
+          formControlName="title"
+          type="text"
+          id=""
+          name=""
+          placeholder=""
+          value="{{ currentTitle }}"
+        />
+      </div>
+    </div>
+    <!-- w -->
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea
+          formControlName="body"
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          value="{{ currentBody }}"
+          style="height: 200px"
+        ></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Post:</h2>
+  <div class="post-container">
+    <h3>{{ post.title }}:</h3>
+    <p>{{ post.body }}</p>
+    <button (click)="deletePost()">DELETE</button>
+    <button (click)="updatedPost()">UPDATE</button>
+  </div>
+  <div>
+    <h2>Comments:</h2>
+    <div class="comment-container">
+      <div *ngFor="let comment of comments">
+        <!-- <h4>{{ comment.name }}:</h4> -->
+        <p>{{ comment.body }}</p>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="header">
+  <div
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="header-icon"
+  ></div>
+  <div
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="header-title"
+  >
+    {{ pageName }}
+  </div>
+  <div class="header-nav">
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="post" routerLinkActive="active">Post</a>
+  </div>
+  <button
+    class="form-redirect-button"
+    routerLink="form"
+    routerLinkActive="active"
+  >
+    Create Post
+  </button>
+</div>
+
+<!-- <app-latest-post></app-latest-post>
+<app-post-container></app-post-container> -->
+<!-- <app-form-page></app-form-page> -->
+<router-outlet></router-outlet>

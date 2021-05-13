@@ -1,0 +1,31 @@
+.img-container {
+  background-image: url(../../img/blog-2355684_1920.jpg);
+  background-repeat: round;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 300px;
+}
+
+.img-text {
+  /* display: flex;
+  align-items: center; */
+  position: absolute;
+  top: 250px;
+  left: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* .arrow-icon {
+  background-image: url(../../img/down-arrow.png);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin-left: 35px;
+} */
