@@ -47,8 +47,14 @@ label p {
   padding: 0 0 0 8px;
 }
 
-.link-container li {
+.link-container a {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.link-container a:hover {
+  color: rgb(107, 75, 16);
 }

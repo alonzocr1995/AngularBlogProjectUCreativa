@@ -36,7 +36,9 @@
       <label>Post: </label>
       <div *ngFor="let post of userPosts">
         <ul class="link-container" routerLink="/post/{{ post.id }}">
-          <li>http://localhost:4200/post/{{ post.id }}</li>
+          <a href="http://localhost:4200/post/{{ post.id }}">
+            - {{ post.title }}</a
+          >
         </ul>
       </div>
     </div>
